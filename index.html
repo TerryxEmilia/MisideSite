@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<style>
+    body{
+        background-color: blueviolet;
+    }
+    html{
+        scroll-behavior: smooth;
+        background-color: plum;
+    }
+    .container{
+        height: 500px;
+        padding: 50px;
+        border-style: solid;
+    }
+    #home{       
+        background-color: purple;
+        height: 90%;
+    }
+    #about{
+        background-color: purple;
+        height: 800px;
+    }
+    #context{
+        background-color: purple;
+        height: 800px;
+    }
+    #contact{
+        background-color: purple;
+    }
+    #test{
+        background-color: purple;
+        height: 800px;
+    }
+    header{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        position: fixed;
+        background-color:deeppink;
+        height: 50px;
+    }
+    a{
+        text-decoration: none;
+        font-weight: bold;
+        color: aliceblue;
+    }
+    .col{
+        height: 80px;
+        background-color: blue;
+        border-style: solid;
+        margin: 10px;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+    }
+    .haragdahgui{
+        display: none;
+    }
+
+    .col:hover{
+        background-color:brown;
+        height: 150px;
+    }
+    .col:hover .haragdahgui{
+        display: block;
+    }
+    p{
+        color: white;
+    }
+    h2{
+        color: cornsilk;
+    }
+    button{
+        background-color: crimson;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    button:active{
+        background-color: red;
+        transform: translate(4px);
+    }
+    input{
+        height: 50px;
+        font-size: large;
+        opacity: 75%;
+        font-weight: bold;
+        border-color: green;
+        padding-left: 20px;
+    }
+</style>
+<script>
+function clickFunction(id)
+    document.getElementById(id).style.color = "white"
+</script>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <header>
+        <a href="#home" ><p>
+            Эхлэл
+        </p></a>
+        <a href="#about"><p>
+            Тухай
+        </p></a>
+        <a href="#context"><p>
+            Түүх
+        </p></a>
+        <a href="#test"><p>
+            Bootstrap   
+        </p></a>
+    </header>
+    <div id="home" class="container">
+        <div style="padding: 90px; margin: 10px; height:auto;">
+            <img src="images/Site-logo.webp" style="width: 40%;">
+            <p style="color: aliceblue; width: 40%;">
+                Мисид (Myside) нь олон төрлийн үзэл бодол, орон зай, соёл, нийгэмд хэрэглэгддэг ойлголт бөгөөд хувь хүн өөрийн үзэл санаа, оролцооны хүрээнд хязгаарлагдах хандлагатай байдаг. Энэ үзэл нь тухайн хүний мэдлэг, туршлага, өсч хөгжих явцад хэрхэн боловсордог талаар ойлголт өгөх зорилготой. Мисид нь бидний үзэл бодол, шийдвэр гаргах арга, өдөр тутмын харилцаанд нөлөөлдөг бөгөөд бидний хүлээн зөвшөөрч буй дэлхийн тухай ойлголттой шууд холбоотой. Энэ нь биднийг зөвхөн өөрийн үзэл бодлоос хэтрэхгүй байхад хүргэдэг ч зарим тохиолдолд хүний төсөөллийн хүрээг тэлэх, өөрсдийгөө сорих боломжийг нээж өгдөг.
+            </p>
+            <p style="color: aliceblue; width: 500px;">
+                Мисидийн ойлголтыг харгалзан үзвэл, бид аливаа мэдээлэл, үүрэг даалгавар, бусдын харилцааг хэрхэн ойлгодог, хүлээн зөвшөөрдөг тухай тодорхой дүгнэлт хийж болох юм.
+            </p>
+        </div>
+        <div style="padding: 50px; padding:90px; margin: 10px;">
+            <img src="images/header.jpg">
+            <p style="color: aliceblue; width: 500px;">
+                Let's imagine that you have a game in which you care for a character. But could you imagine one day getting into that game yourself?
+            </p>
+        </div>
+    </div>
+    <div id="about" class="container" style="padding: 90px;">
+        <h1 style="color: aliceblue;">
+            Мэдээллийн тухай
+        </h1>
+        <p style="width: 900px; color:aliceblue;">
+            MiSide тоглоомын гол онцлог нь тоглогчдыг өөрийн сонголтууд болон шийдвэрүүдийн тусламжтайгаар түүхийг үргэлжлүүлэхэд оршдог. Тоглоом нь тоглогчдод эмotional болон сэтгэл зүйн байдлыг ойлгож, ямар нэгэн сэтгэлзүйн хүндрэл, бэрхшээлийг даван туулж, өөрийгөө ойлгох боломжийг олгодог.
+        </p>
+        <img src="images/20241012-104144.gif">
+        <p style="width: 900px; color:pink">
+            MiSide нь сэтгэл зүй болон эмоциональ өөрчлөлт, шийдвэр гаргалт, хувь хүний өсөлт зэргийг судлах сонирхолтой тоглоом бөгөөд илүү гүн гүнзгий ойлголт, амьдралын философийг ойлгох боломжийг олгодог. Хэрвээ та сэтгэл зүйн түүхүүд, анхаарал татсан дүрслэл, ойлголтыг хуваалцах тоглоомыг сонирхдог бол энэ тоглоомыг туршиж үзэх нь зүйтэй.
+        </p>
+    </div>
+    <div id="context" class="container" style="padding: 90px;">
+        <h1 style="color: aliceblue;">
+            Түүх
+        </h1>
+        <p style="width: 900px; color:white; font-size:large">
+            MiSide тоглоомын түүх нь нэгэн хүүгийн сэтгэл зүйн аялал болон хувь хүний өсөлт, өөрчлөлтийн тухай юм. Тоглогчид нь гол дүрийнхээ хувьд үйл явдлыг дамжуулж, өөрийн үйлдлүүд болон сонголтын тусламжтайгаар түүхийг үргэлжлүүлэн явуулдаг.
+
+Тоглоомын гол үйл явдлын үндсэн хэсэг нь хүүгийн дотоод сэтгэл зүйн бэрхшээл, хямралтай холбоотой. Түүний амьдралд гарсан олон бэрхшээлүүд нь түүний сэтгэл зүйг эрс өөрчилж, өөрийнхөө тухай болон бусад хүмүүстэй харилцахдаа хэрхэн өөрчлөгддөгийг тусган харуулдаг.
+
+Түүхийн эхлэл: Гол дүр буюу хүү нь амьдралдаа хэд хэдэн бэрхшээлтэй тулгарч, өөрийн дотоод сэтгэл зүйтэй тэмцэж байдаг. Түүний өнгөрсөн болон сэтгэл зүйн түвшинд гарах дарамт нь түүний сэтгэл санааг хүндээр доромжилж, түүнийг өөрчлөхөд хүргэдэг. Тоглоомын явцад, тоглогчид нь түүнийг хэрхэн даван туулж, өөрийгөө ойлгох, өөртөө хүлээн зөвшөөрөх замаар илүү сайхан амьдралыг бий болгохыг хайж болно.
+
+Сэтгэл зүйн аялал: Тоглоомын гол сэдэв нь хүүгийн сэтгэл зүйн уналт, өөрчлөлт, дарамттай тулах зам юм. Тоглогч нь олон төрлийн сонголт хийх бөгөөд эдгээр сонголтууд нь хүүгийн түүхийг өөрчлөн, эмoциональ байдлыг шинэчилнэ.
+
+Үр дагавар: Тоглоомын үйл явдлын дагуу, тоглогчдын хийсэн сонголт, үйлдэл нь түүхийн эцсийн үр дүнд нөлөөлдөг. Тоглогчид өөрсдийн сэтгэл зүйг ойлгож, хүүгийн өмнө тулгарсан асуудлуудыг хэрхэн шийдэх, өөрчлөх талаар өөрсдөө шийдвэр гаргах шаардлагатай.
+
+MiSide нь сэтгэл зүйн болон эмоциональ өөрчлөлт, хувь хүний ойлголт, өсөлт зэргийг гүн гүнзгий судалдаг тоглоом бөгөөд тоглогчдыг өөрсдийгөө танин мэдэх, түүхийн дараах үр дагаварыг бодож үзэхийг уриалдаг.
+        </p>
+    </div>
+    <div id="test" style="padding: 90px;" class="bg-secondary-subtle; container">
+        <div class="row">
+            <div class="col">
+                <h2>Column</h2>
+                <p class="haragdahgui">ene sungahaar garch irne</p>
+            </div>
+            <div class="col">
+                <h2>Column</h2>
+                <p class="haragdahgui">ene sungahaar garch irne</p>
+            </div>
+            <div class="col">
+                <h2>Column</h2>
+                <p class="haragdahgui">ene sungahaar garch irne</p>
+            </div>
+        <div class="row">
+            <div class="col">
+                    <h2>Column</h2>
+                    <p class="haragdahgui">ene sungahaar garch irne</p>
+                </div>
+            <div class="col">
+                    <h2>Column</h2>
+                    <p class="haragdahgui">ene sungahaar garch irne</p>
+                </div>
+            <div class="col">
+                    <h2>Column</h2>
+                    <p class="haragdahgui">ene sungahaar garch irne</p>
+                </div>
+                </div>
+            </div>
+            <input type="password" class="input" placeholder="password oruulna uu">
+            <button id= "button1" onclick="clickFunction('home_text')">Button</button>
+    </div>
+
+</body>
+</html>
