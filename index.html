@@ -5,151 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
-<style>
-    body{
-        background-color: #210725;
-    }
-    html{
-        scroll-behavior: smooth;
-        background-color: plum;
-    }
-    .container{
-        height: 500px;
-        padding: 50px;
-        border-style: solid;
-    }
-    #home{       
-        background-color: #7d246e;
-        height: 90%;
-    }
-    #about{
-        background-color: #7d246e;
-        height: 800px;
-    }
-    #context{
-        background-color: #7d246e;
-        height: 800px;
-    }
-    #contact{
-        background-color: #7d246e;
-    }
-    #test{
-        background-color: #7d246e;
-        height: 800px;
-    }
-    header{
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-        position: fixed;
-        background-color:deeppink;
-        height: 50px;
-    }
-    a{
-        text-decoration: none;
-        font-weight: bold;
-        color: aliceblue;
-    }
-    .col{
-        height: 80px;
-        background-color: blue;
-        border-style: solid;
-        margin: 10px;
-        position: relative;
-        transition: all 0.3s ease-in-out;
-        border-radius: 5px;
-        box-shadow: 10px 10px 10px grey;
-    }
-    .haragdahgui{
-        display: none;
-    }
-
-    .col:hover{
-        background-color:brown;
-        height: 150px;
-    }
-    .col:hover .haragdahgui{
-        display: block;
-    }
-    p{
-        color:white;
-    }
-    h2{
-        color: cornsilk;
-    }
-    button{
-        background-color: crimson;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 5px;
-        transition: all 0.3s ease-in-out;
-    }
-    button:active{
-        background-color: red;
-        transform: translate(4px);
-    }
-    button:hover{
-        box-shadow: 8px 8px 10px grey;
-    }
-    input{
-        height: 50px;
-        font-size: large;
-        opacity: 75%;
-        font-weight: bold;
-        border-color: green;
-        padding-left: 20px;
-    }
-    .center{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 40%;
-    }   
-</style>
-<script>
-function clickFunction(id){
-    document.getElementById(id).style.color = "black";
-}
-function changeColor(id){
-    document.getElementById(id).style.color = "black";
-}
-function darkMode(id){
-    document.getElementById('home').style.backgroundColor = "black";
-    document.getElementById('about').style.backgroundColor = "black";
-    document.getElementById('context').style.backgroundColor = "black";
-    document.getElementById('test').style.backgroundColor = "black";
-}
-function whiteMode(id){
-    document.getElementById('home').style.backgroundColor = "white";
-    document.getElementById('about').style.backgroundColor = "white";
-    document.getElementById('context').style.backgroundColor = "white";
-    document.getElementById('test').style.backgroundColor = "white";
-    document.getElementsByTagName('p') = "blue";
-}
-</script>
-<body>
+<body style="background-color: #210725;">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
     <header>
-        <a href="#home" ><p>
-            Эхлэл
-        </p></a>
-        <a href="#about"><p>
-            Тухай
-        </p></a>
-        <a href="#context"><p>
-            Түүх
-        </p></a>
-        <a href="#test"><p>
-            Bootstrap   
-        </p></a>
+        <a class="d-flex align-items-center mb-1 mb-lg-0 text-white text-decoration-none">
+            <svg class="bi me-2" role="img" aria-label="Bootstrap" width="40" height="32"><img src="images/Site-logo.webp" style="width: 30%; justify-content:center;">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#home" class="nav-link px-2 text-secondary">Home</a></li>
+                <li><a href="#about" class="nav-link px-2 text-white">Features</a></li>
+                <li><a href="#context" class="nav-link px-2 text-white">Pricing</a></li>
+                <li><a href="#test" class="nav-link px-2 text-white">FAQs</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+              </ul></svg>
+        </a>
     </header>
-    <img src="images/miside.png" style="width: 1320px; display:block; margin-left:auto; margin-right:auto; border-style: solid;" >
+    <img src="images/miside.png" style="width:100%; display:block; padding: 0;" class="container">
     <div id="home" class="container">
-        
         <div style="padding: 60px; margin: 10px; height:auto;">
-            <img src="images/Site-logo.webp" class="center">
             <p style="text-align:center">
                 Мисид (Myside) нь олон төрлийн үзэл бодол, орон зай, соёл, нийгэмд хэрэглэгддэг ойлголт бөгөөд хувь хүн өөрийн үзэл санаа, оролцооны хүрээнд хязгаарлагдах хандлагатай байдаг. Энэ үзэл нь тухайн хүний мэдлэг, туршлага, өсч хөгжих явцад хэрхэн боловсордог талаар ойлголт өгөх зорилготой. Мисид нь бидний үзэл бодол, шийдвэр гаргах арга, өдөр тутмын харилцаанд нөлөөлдөг бөгөөд бидний хүлээн зөвшөөрч буй дэлхийн тухай ойлголттой шууд холбоотой. Энэ нь биднийг зөвхөн өөрийн үзэл бодлоос хэтрэхгүй байхад хүргэдэг ч зарим тохиолдолд хүний төсөөллийн хүрээг тэлэх, өөрсдийгөө сорих боломжийг нээж өгдөг.
             </p>
@@ -169,11 +45,11 @@ function whiteMode(id){
         <h1 style="color: aliceblue;">
             Мэдээллийн тухай
         </h1>
-        <p style="width: 900px; color:aliceblue;">
+        <p style="width: 100%; color:aliceblue;">
             MiSide тоглоомын гол онцлог нь тоглогчдыг өөрийн сонголтууд болон шийдвэрүүдийн тусламжтайгаар түүхийг үргэлжлүүлэхэд оршдог. Тоглоом нь тоглогчдод эмotional болон сэтгэл зүйн байдлыг ойлгож, ямар нэгэн сэтгэлзүйн хүндрэл, бэрхшээлийг даван туулж, өөрийгөө ойлгох боломжийг олгодог.
         </p>
-        <img src="images/20241012-104144.gif">
-        <p style="width: 900px; color:pink">
+        <img src="images/20241012-104144.gif" style="width: 100%;">
+        <p style="width: 100%; color:pink">
             MiSide нь сэтгэл зүй болон эмоциональ өөрчлөлт, шийдвэр гаргалт, хувь хүний өсөлт зэргийг судлах сонирхолтой тоглоом бөгөөд илүү гүн гүнзгий ойлголт, амьдралын философийг ойлгох боломжийг олгодог. Хэрвээ та сэтгэл зүйн түүхүүд, анхаарал татсан дүрслэл, ойлголтыг хуваалцах тоглоомыг сонирхдог бол энэ тоглоомыг туршиж үзэх нь зүйтэй.
         </p>
     </div>
@@ -181,7 +57,7 @@ function whiteMode(id){
         <h1 style="color: aliceblue;">
             Түүх
         </h1>
-        <p style="width: 900px; color:white; font-size:large">
+        <p style="width: 100%; color:white; font-size:large">
             MiSide тоглоомын түүх нь нэгэн хүүгийн сэтгэл зүйн аялал болон хувь хүний өсөлт, өөрчлөлтийн тухай юм. Тоглогчид нь гол дүрийнхээ хувьд үйл явдлыг дамжуулж, өөрийн үйлдлүүд болон сонголтын тусламжтайгаар түүхийг үргэлжлүүлэн явуулдаг.
 
 Тоглоомын гол үйл явдлын үндсэн хэсэг нь хүүгийн дотоод сэтгэл зүйн бэрхшээл, хямралтай холбоотой. Түүний амьдралд гарсан олон бэрхшээлүүд нь түүний сэтгэл зүйг эрс өөрчилж, өөрийнхөө тухай болон бусад хүмүүстэй харилцахдаа хэрхэн өөрчлөгддөгийг тусган харуулдаг.

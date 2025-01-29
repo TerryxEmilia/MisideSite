@@ -1,0 +1,103 @@
+    body{
+        background-color: #210725;
+    }
+    html{
+        scroll-behavior: smooth;
+        background-color: plum;
+    }
+    .container{
+        height: 80%;
+        padding: 50px;
+        border-style: solid;
+    }
+    .imgcontainer{
+        border-style: solid;
+        height: 60px;
+    }
+    #home{       
+        background-color: #7d246e;
+        height: 90%;
+    }
+    #about{
+        background-color: #7d246e;
+        height: 800px;
+    }
+    #context{
+        background-color: #7d246e;
+        height: 800px;
+    }
+    #contact{
+        background-color: #7d246e;
+    }
+    #test{
+        background-color: #7d246e;
+        height: 800px;
+    }
+    header{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        position: fixed;
+        background-color:deeppink;
+        height: 50px;
+    }
+    a{
+        text-decoration: none;
+        font-weight: bold;
+        color: aliceblue;
+    }
+    .col{
+        height: 80px;
+        background-color: blue;
+        border-style: solid;
+        margin: 10px;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        border-radius: 5px;
+        box-shadow: 10px 10px 10px grey;
+    }
+    .haragdahgui{
+        display: none;
+    }
+
+    .col:hover{
+        background-color:brown;
+        height: 150px;
+    }
+    .col:hover .haragdahgui{
+        display: block;
+    }
+    p{
+        color:white;
+    }
+    h2{
+        color: cornsilk;
+    }
+    button{
+        background-color: crimson;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+    button:active{
+        background-color: red;
+        transform: translate(4px);
+    }
+    button:hover{
+        box-shadow: 8px 8px 10px grey;
+    }
+    input{
+        height: 50px;
+        font-size: large;
+        opacity: 75%;
+        font-weight: bold;
+        border-color: green;
+        padding-left: 20px;
+    }
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }   
