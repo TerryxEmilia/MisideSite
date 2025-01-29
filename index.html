@@ -9,7 +9,7 @@
 </head>
 <style>
     body{
-        background-color: blueviolet;
+        background-color: #210725;
     }
     html{
         scroll-behavior: smooth;
@@ -21,22 +21,22 @@
         border-style: solid;
     }
     #home{       
-        background-color: purple;
+        background-color: #7d246e;
         height: 90%;
     }
     #about{
-        background-color: purple;
+        background-color: #7d246e;
         height: 800px;
     }
     #context{
-        background-color: purple;
+        background-color: #7d246e;
         height: 800px;
     }
     #contact{
-        background-color: purple;
+        background-color: #7d246e;
     }
     #test{
-        background-color: purple;
+        background-color: #7d246e;
         height: 800px;
     }
     header{
@@ -59,6 +59,8 @@
         margin: 10px;
         position: relative;
         transition: all 0.3s ease-in-out;
+        border-radius: 5px;
+        box-shadow: 10px 10px 10px grey;
     }
     .haragdahgui{
         display: none;
@@ -72,7 +74,7 @@
         display: block;
     }
     p{
-        color: white;
+        color:white;
     }
     h2{
         color: cornsilk;
@@ -82,10 +84,14 @@
         color: white;
         padding: 10px 20px;
         border-radius: 5px;
+        transition: all 0.3s ease-in-out;
     }
     button:active{
         background-color: red;
         transform: translate(4px);
+    }
+    button:hover{
+        box-shadow: 8px 8px 10px grey;
     }
     input{
         height: 50px;
@@ -95,10 +101,33 @@
         border-color: green;
         padding-left: 20px;
     }
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }   
 </style>
 <script>
-function clickFunction(id)
-    document.getElementById(id).style.color = "white"
+function clickFunction(id){
+    document.getElementById(id).style.color = "black";
+}
+function changeColor(id){
+    document.getElementById(id).style.color = "black";
+}
+function darkMode(id){
+    document.getElementById('home').style.backgroundColor = "black";
+    document.getElementById('about').style.backgroundColor = "black";
+    document.getElementById('context').style.backgroundColor = "black";
+    document.getElementById('test').style.backgroundColor = "black";
+}
+function whiteMode(id){
+    document.getElementById('home').style.backgroundColor = "white";
+    document.getElementById('about').style.backgroundColor = "white";
+    document.getElementById('context').style.backgroundColor = "white";
+    document.getElementById('test').style.backgroundColor = "white";
+    document.getElementsByTagName('p') = "blue";
+}
 </script>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
@@ -116,20 +145,23 @@ function clickFunction(id)
             Bootstrap   
         </p></a>
     </header>
+    <img src="images/miside.png" style="width: 1320px; display:block; margin-left:auto; margin-right:auto; border-style: solid;" >
     <div id="home" class="container">
-        <div style="padding: 90px; margin: 10px; height:auto;">
-            <img src="images/Site-logo.webp" style="width: 40%;">
-            <p style="color: aliceblue; width: 40%;">
+        
+        <div style="padding: 60px; margin: 10px; height:auto;">
+            <img src="images/Site-logo.webp" class="center">
+            <p style="text-align:center">
                 Мисид (Myside) нь олон төрлийн үзэл бодол, орон зай, соёл, нийгэмд хэрэглэгддэг ойлголт бөгөөд хувь хүн өөрийн үзэл санаа, оролцооны хүрээнд хязгаарлагдах хандлагатай байдаг. Энэ үзэл нь тухайн хүний мэдлэг, туршлага, өсч хөгжих явцад хэрхэн боловсордог талаар ойлголт өгөх зорилготой. Мисид нь бидний үзэл бодол, шийдвэр гаргах арга, өдөр тутмын харилцаанд нөлөөлдөг бөгөөд бидний хүлээн зөвшөөрч буй дэлхийн тухай ойлголттой шууд холбоотой. Энэ нь биднийг зөвхөн өөрийн үзэл бодлоос хэтрэхгүй байхад хүргэдэг ч зарим тохиолдолд хүний төсөөллийн хүрээг тэлэх, өөрсдийгөө сорих боломжийг нээж өгдөг.
             </p>
-            <p style="color: aliceblue; width: 500px;">
+            <p>
                 Мисидийн ойлголтыг харгалзан үзвэл, бид аливаа мэдээлэл, үүрэг даалгавар, бусдын харилцааг хэрхэн ойлгодог, хүлээн зөвшөөрдөг тухай тодорхой дүгнэлт хийж болох юм.
             </p>
+            <button id= "button2" class="button" onclick="changeColor('home')" style="width: 200px;" > border-color</button>
         </div>
-        <div style="padding: 50px; padding:90px; margin: 10px;">
-            <img src="images/header.jpg">
-            <p style="color: aliceblue; width: 500px;">
-                Let's imagine that you have a game in which you care for a character. But could you imagine one day getting into that game yourself?
+        <div style="padding: 40px; padding:90px; margin: 10px;">
+            <img src="images/header.jpg" class="center" style="width: 50%;">
+            <p style= "text-align:center">
+                Та дүрд санаа тавьдаг тоглоомтой гэж төсөөлөөд үз дээ. Гэхдээ хэзээ нэгэн цагт та өөрөө тэр тоглоомд орно гэж төсөөлж чадах уу?
             </p>
         </div>
     </div>
@@ -193,7 +225,13 @@ MiSide нь сэтгэл зүйн болон эмоциональ өөрчлөл
                 </div>
             </div>
             <input type="password" class="input" placeholder="password oruulna uu">
-            <button id= "button1" onclick="clickFunction('home_text')">Button</button>
+            <button id= "button1" onclick="clickFunction('home_text')" class="button">Button</button>
+            <button id= "button1" class="button" onclick="darkMode('container')">
+                Dark
+            </button>
+            <button id="button1" class="button" onclick="whiteMode('container')">
+                White
+            </button>
     </div>
 
 </body>
