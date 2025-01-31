@@ -16,22 +16,21 @@
     }
     #home{       
         background-color: #7d246e;
-        height: 90%;
     }
     #about{
         background-color: #7d246e;
-        height: 800px;
     }
     #context{
         background-color: #7d246e;
-        height: 800px;
     }
     #contact{
         background-color: #7d246e;
     }
     #test{
         background-color: #7d246e;
-        height: 800px;
+    }
+    #tatah{
+        background-color: #7d246e;
     }
     header{
         display: flex;
@@ -48,21 +47,22 @@
     }
     .col{
         height: 80px;
-        background-color: blue;
+        background-color: 5F2F6B;
         border-style: solid;
         margin: 10px;
         position: relative;
         transition: all 0.3s ease-in-out;
         border-radius: 5px;
-        box-shadow: 10px 10px 10px grey;
+        box-shadow: 10px 10px 10px pink;
     }
     .haragdahgui{
         display: none;
+        transition: ease-in-out;
     }
 
     .col:hover{
         background-color:brown;
-        height: 150px;
+        height: auto;
     }
     .col:hover .haragdahgui{
         display: block;
