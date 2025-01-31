@@ -18,3 +18,6 @@ function whiteMode(id){
     document.getElementById('test').style.backgroundColor = "white";
     document.getElementsByTagName('p') = "blue";
 }
+function login(){
+    window.location.href="test.html";
+}
