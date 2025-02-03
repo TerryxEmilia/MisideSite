@@ -9,119 +9,41 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body style="background-color: #210725;">
+    <div class="wrapper">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script type="text/javascript" src="script.js"></script>
-    <header>
-        <a class="d-flex align-items-center mb-1 mb-lg-0 text-white text-decoration-none">
-            <svg class="bi me-2" role="img" aria-label="Bootstrap" width="40" height="32"><img src="images/Site-logo.webp" style="width: 30%; justify-content:center;">
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#home" class="nav-link px-2 text-secondary">Эхлэл</a></li>
-                <li><a href="#about" class="nav-link px-2 text-white">Тухай</a></li>
-                <li><a href="#context" class="nav-link px-2 text-white">Түүх</a></li>
-                <li><a href="#test" class="nav-link px-2 text-white">Татах</a></li>
-              </ul></svg>
-        </a>
-    </header>
-    <img src="images/miside.png" style="width:100%; display:block; padding: 0;" class="container">
-    <div id="home" class="container" style="padding: 10%;">
-        <div style="padding: 60px; margin: 10px; height:auto;">
-            <p style="text-align:center">
-                Мисид нь олон төрлийн үзэл бодол, орон зай, соёл, нийгэмд хэрэглэгддэг ойлголт бөгөөд хувь хүн өөрийн үзэл санаа, оролцооны хүрээнд хязгаарлагдах хандлагатай байдаг. Энэ үзэл нь тухайн хүний мэдлэг, туршлага, өсч хөгжих явцад хэрхэн боловсордог талаар ойлголт өгөх зорилготой. Мисид нь бидний үзэл бодол, шийдвэр гаргах арга, өдөр тутмын харилцаанд нөлөөлдөг бөгөөд бидний хүлээн зөвшөөрч буй дэлхийн тухай ойлголттой шууд холбоотой. Энэ нь биднийг зөвхөн өөрийн үзэл бодлоос хэтрэхгүй байхад хүргэдэг ч зарим тохиолдолд хүний төсөөллийн хүрээг тэлэх, өөрсдийгөө сорих боломжийг нээж өгдөг.
-            </p>
-            <p>
-                Мисидийн ойлголтыг харгалзан үзвэл, бид аливаа мэдээлэл, үүрэг даалгавар, бусдын харилцааг хэрхэн ойлгодог, хүлээн зөвшөөрдөг тухай тодорхой дүгнэлт хийж болох юм.
-            </p>
-            <button id= "button2" class="button" onclick="changeColor('home')" style="width: 200px;" > border-color</button>
-        </div>
-        <div style="padding: 40px; padding:90px; margin: 10px;">
-            <img src="images/header.jpg" class="center" style="width: 50%;">
-            <p style= "text-align:center">
-                Та дүрд санаа тавьдаг тоглоомтой гэж төсөөлөөд үз дээ. Гэхдээ хэзээ нэгэн цагт та өөрөө тэр тоглоомд орно гэж төсөөлж чадах уу?
-            </p>
-        </div>
-    </div>
-    <div id="about" class="container" style="padding: 10%;">
-        <h1 style="color: aliceblue;">
-            Мэдээллийн тухай
-        </h1>
-        <p style="width: 100%;">
-            MiSide тоглоомын гол онцлог нь тоглогчдыг өөрийн сонголтууд болон шийдвэрүүдийн тусламжтайгаар түүхийг үргэлжлүүлэхэд оршдог. Тоглоом нь тоглогчдод эмotional болон сэтгэл зүйн байдлыг ойлгож, ямар нэгэн сэтгэлзүйн хүндрэл, бэрхшээлийг даван туулж, өөрийгөө ойлгох боломжийг олгодог.
-        </p>
-        <img src="images/20241012-104144.gif" style="width: 100%;">
-        <p></p>
-        <p style="width: 100%;">
-            MiSide нь сэтгэл зүй болон эмоциональ өөрчлөлт, шийдвэр гаргалт, хувь хүний өсөлт зэргийг судлах сонирхолтой тоглоом бөгөөд илүү гүн гүнзгий ойлголт, амьдралын философийг ойлгох боломжийг олгодог. Хэрвээ та сэтгэл зүйн түүхүүд, анхаарал татсан дүрслэл, ойлголтыг хуваалцах тоглоомыг сонирхдог бол энэ тоглоомыг туршиж үзэх нь зүйтэй.
-        </p>
-    </div>
-    <div id="context" class="container" style="padding: 10%;">
-        <h1 style="color: aliceblue;">
-            Түүх
-        </h1>
-        <p style="width: 100%; color:white; font-size:large">
-            MiSide бол ид шидийн шалтгааны улмаас гар утасны симуляцид орсон энгийн залуугийн түүхийг өгүүлэх аймшгийн элементүүдтэй адал явдалт тоглоом юм. Ухаалаг гар утасныхаа дэлгэцэн дээр саяхан ажигласан байшинд гарч ирэхэд баатар эргэлзэв. Гайхсан залуу унтлагын өрөөндөө олж мэдсэн тодорхой төхөөрөмжийн зааврыг дагаж мөрддөг. Хэдхэн хормын дараа түүнийг энэ гар утасны тоглоомын дүр төрх нь залууд танил болсон хөөрхөн охин угтан авна.
-        </p>
-        <img src="images/intro1.png" style="width: 100%;">
-        <p></p>
-        <img src="images/intro2.png" style="width: 100%;">
-        <p></p>
-        <img src="images/intro3.png" style="width: 100%; display:block">
-        <p></p>
-        <div class="row">
-            <div class="col">
-        <h2>Илүү их мэдээлэл</h2>
-        <p class="haragdahgui">Status:	Released<br>
-            Platforms:	Windows<br>
-            Author:	Aihasto<br>
-            Genre:	Simulation, Visual Novel <br>
-            Tags:	3D, Anime, First-Person, girl, Horror, Singleplayer, tamagotchi <br>
-            Average: session	About a half-hour <br>
-            Languages:	English, Spanish; Castilian, French, Polish, Russian, Ukrainian, Chinese (Simplified) <br>
-            Links:	<a href = 'https://store.steampowered.com/app/2527500/MiSide/'>Steam</a>, <a href = 'https://discord.com/invite/6q375pv'>Discord</a>, <a href = 'https://boosty.to/aihasto'>Kickstarter</a></p></div>
+    <nav>
+            <div class="menu">
+                <div class="logo">
+                    <img src="images/Site-logo.webp" style="">
+                </div>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li>
+                    <div class="MobNavBtns">
+                        <button>Тоглох</button>
+                    </div>
+                </li>
+                <li><a href="#home">Эхлэл</a></li>
+                <li><a href="#context">Зураг</a></li>
+                <li><a href="#about">Түүх</a></li>
+            </ul>
+    </nav>>
+    <div class="container">
+        <div class="InnderDiv">
+            <div class="center">
+                <p class="title">Response</p>
+                <p class="sub_des">Miside is an psychological game franchise created by 2 developers.</p>
+                <div class="btns">
+                    <button>Татах</button>
+                </div>
+            </div>
         </div>
     </div>
-    <div id = "tatah" class="container">
-
     </div>
-    <div id="test" style="padding: 10%;" class="bg-secondary-subtle; container">
-        <div class="row">
-            <div class="col">
-                <h2>Column</h2>
-                <p class="haragdahgui">ene sungahaar garch irne</p>
-            </div>
-            <div class="col">
-                <h2>Column</h2>
-                <p class="haragdahgui">ene sungahaar garch irne</p>
-            </div>
-            <div class="col">
-                <h2>Column</h2>
-                <p class="haragdahgui">ene sungahaar garch irne</p>
-            </div>
-        <div class="row">
-            <div class="col">
-                    <h2>Column</h2>
-                    <p class="haragdahgui">ene sungahaar garch irne</p>
-                </div>
-            <div class="col">
-                    <h2>Column</h2>
-                    <p class="haragdahgui">ene sungahaar garch irne</p>
-                </div>
-            <div class="col">
-                    <h2>Column</h2>
-                    <p class="haragdahgui">ene sungahaar garch irne</p>
-                </div>
-                </div>
-            </div>
-            <input type="password" class="input" placeholder="password oruulna uu">
-            <button id= "button1" onclick="clickFunction('home_text')" class="button">Button</button>
-            <button id= "button1" class="button" onclick="darkMode('container')">
-                Dark
-            </button>
-            <button id="button1" class="button" onclick="whiteMode('container')">
-                White
-            </button>
-
-            </button>
-    </div>
-
 </body>
 </html>
