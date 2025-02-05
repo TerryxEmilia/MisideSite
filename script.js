@@ -1,23 +1,25 @@
+function openModal() {
+    document.getElementById("myModal").style.display = "block";
+}
 
-function clickFunction(id){
-    document.getElementById(id).style.color = "black";
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
 }
-function changeColor(id){
-    document.getElementById(id).style.color = "black";
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
-function darkMode(id){
-    document.getElementById('home').style.backgroundColor = "black";
-    document.getElementById('about').style.backgroundColor = "black";
-    document.getElementById('context').style.backgroundColor = "black";
-    document.getElementById('test').style.backgroundColor = "black";
-}
-function whiteMode(id){
-    document.getElementById('home').style.backgroundColor = "white";
-    document.getElementById('about').style.backgroundColor = "white";
-    document.getElementById('context').style.backgroundColor = "white";
-    document.getElementById('test').style.backgroundColor = "white";
-    document.getElementsByTagName('p') = "blue";
-}
-function login(){
-    window.location.href="test.html";
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
 }

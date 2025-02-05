@@ -1,10 +1,10 @@
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body{
+html, body {
     height: 100%;
 }
 
@@ -13,12 +13,16 @@ body {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 nav {
     width: 100%;
     padding: 10px 0;
     z-index: 12;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 nav .menu {
@@ -29,8 +33,14 @@ nav .menu {
     justify-content: space-between;
     padding: 0 20px;
 }
+
 .menu .logo img {
-    width: 300px;
+    width: 200px;
+}
+
+.menu ul li {
+    display: inline-block;
+    list-style: none;
 }
 
 .menu ul li a {
@@ -43,8 +53,8 @@ nav .menu {
     transition: all 0.3s ease;
 }
 
-.menu ul li a:hover{
-    background-image: linear-gradient(to right, blue, cyan);
+.menu ul li a:hover {
+    background-image: linear-gradient(to right, turquoise, grey);
     color: black;
 }
 
@@ -52,7 +62,7 @@ nav .menu {
     height: 50px;
     width: 150px;
     border-radius: 50px;
-    border: 2px solid blue;
+    border: 2px solid grey;
     font-size: 20px;
     font-weight: 500;
     padding: 0 10px;
@@ -64,7 +74,7 @@ nav .menu {
 }
 
 .NavBtns button:hover {
-    background-image: linear-gradient(to right, blue, cyan);
+    background-image: linear-gradient(to right, turquoise, grey);
     color: black;
 }
 
@@ -83,6 +93,7 @@ nav .menu {
     height: 80%;
     display: flex;
     align-items: center;
+    margin-top: 50px;
 }
 
 .center {
@@ -94,14 +105,24 @@ nav .menu {
     font-size: 70px;
 }
 
+.about {
+    color: white;
+    font-size: 18px;
+    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+}
 .center .sub_des {
     color: white;
     font-size: 18px;
     font-weight: 20;
     margin: 11px 0 25px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
 }
 
-.center .btns button{
+.center .btns button {
     height: 50px;
     width: 150px;
     border-radius: 50px;
@@ -112,7 +133,7 @@ nav .menu {
     cursor: pointer;
     outline: none;
     transition: all 0.3s ease;
-    background-image: linear-gradient(to right, blue, cyan);
+    background-image: linear-gradient(to right, turquoise, grey);
     color: black;
 }
 
@@ -122,7 +143,7 @@ nav .menu {
     background: transparent;
 }
 
-.checkbtn{
+.checkbtn {
     font-size: 30px;
     color: white;
     float: right;
@@ -131,7 +152,7 @@ nav .menu {
     display: none;
 }
 
-#check{
+#check {
     display: none;
 }
 
@@ -147,6 +168,149 @@ nav .menu {
     outline: none;
     transition: all 0.3s ease;
     color: white;
-    background-image: linear-gradient(to right, blue, cyan);
+    background-image: linear-gradient(to right, turquoise, grey);
     border: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 1200px) {
+    .menu ul {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    body {
+        background-image: url(images/miside.png);
+    }
+
+    .menu ul li {
+        margin-left: 7px;
+        text-align: left;
+        padding-left: 60px;
+    }
+
+    li .MobNavBtns {
+        padding: 0 15px;
+    }
+
+    .MobNavBtns button {
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .NavBtns {
+        display: none;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .center .title {
+        font-size: 38px;
+    }
+
+    .center {
+        width: 100%;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #333;
+        top: 0;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a:active {
+        background: none;
+    }
+
+    #check:checked ~ ul {
+        left: -50px;
+    }
+
+    
 }
