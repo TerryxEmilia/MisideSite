@@ -101,12 +101,24 @@ nav .menu {
 }
 
 .center .title {
-    color: white;
+    color: rgb(228, 83, 163);
     font-size: 70px;
 }
 
 .about {
-    color: white;
+    color: rgb(209, 131, 224);
+    font-size: 18px;
+    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+}
+.photofix {
+    border-radius: 25px;
+    margin: 20px;
+}
+.text{
+    color: rgb(243, 52, 100);
     font-size: 18px;
     margin: 20px 0;
     background-color: rgba(0, 0, 0, 0.6);
@@ -114,7 +126,7 @@ nav .menu {
     border-radius: 10px;
 }
 .center .sub_des {
-    color: white;
+    color: rgb(228, 83, 163);
     font-size: 18px;
     font-weight: 20;
     margin: 11px 0 25px 0;
@@ -191,6 +203,7 @@ nav .menu {
     padding: 0;
     width: 80%;
     max-width: 1200px;
+    border-radius: 25px;
 }
 
 .close {
@@ -312,5 +325,12 @@ nav .menu {
         left: -50px;
     }
 
-    
+    .photofix {
+        width: 100%;
+    }
+
+    .about ul {
+        position: absolute;
+    }
+
 }
