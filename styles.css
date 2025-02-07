@@ -237,7 +237,11 @@ main {
 }
 .photofix {
     border-radius: 25px;
-    margin: 20px;
+}
+
+.giffix {
+    border-radius: 25px;
+    margin: 25px;
 }
 .text{
     color: rgb(231, 62, 155);
@@ -565,7 +569,7 @@ main {
         left: -50px;
     }
 
-    .photofix {
+    .giffix{
         width: 100%;
     }
 
