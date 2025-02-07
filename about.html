@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body style="background-image: url(images/pixelart.webp);">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <div class="wrapper">
+        <nav>
+            <div class="menu">
+                <div class="logo">
+                    <img src="images/Site-logo.webp" style="height: 80%;">
+                </div>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="index.html">Эхлэл</a></li>
+                    <li><a href="characters.html">Митанууд</a></li>
+                    <li><a href="about.html">Мэдээлэл</a></li>
+                    <li><a href="#slideshow" onclick="openModal()">Зураг</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div id="about" class="container" style="margin-top: 20px;">
+                <img src="images/hi.png" style="top: 0;"><br>
+                <p></p>
+                <img src="images/20241012-104144.gif" class="photofix">
+                <div class="row">
+                    <div class="col"><img src="images/mita_blush_600x200_frame.gif" class="photofix"></div>
+                    <div class="col">
+                        <p class="text">Та өдөр бүр над дээр ирж, гэрийн ажилд тусалж, хоол хийж, бэлэг авч өгөх
+                            болно.Би чамд хайртай! Би чамайг өдөр бүр дэргэдээ байлгаж, өдөр
+                            бүр чамтай хамт амьдармаар байна~
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col"><img src="images/mita_self_600x200_frame.gif" class="photofix"></div>
+                    <div class="col"><p class="text">Эхлээд селфи хийцгээе!, удаан үргэлжлэх болно~</p></div>
+                    <div class="col"><img src="images/mita_diner_frame.gif" class="photofix"></div>
+                    <div class="col"><p class="text">Сайхан хооллорой!!</p></div>
+                    <img src="images/Features.png">
+                </div>
+                <ul>
+                    <li class="about"><b>Харах хэв маяг:</b>
+                        Зохиогчид гол дүрийн аймшигтай адал явдлын дэвсгэр дээр өнгөлөг аниме стилийн ялгааг онцолж
+                        харуулахыг хүссэн байгаа.</li>
+                    <li class="about"><b>Сонирхолтой өгүүлэмж:</b>
+                        Тоглоом нь сэтгэлзүйн хурцадмал байдлаар дагалдсан гэнэтийн хөгжилтэй түүхтэй.</li>
+                    <li class="about"><b>Анхны хөгжмийн хамтлагууд:</b>
+                        Тоглоомын дуу авиа нь тайван орчинд шилжих, жинхэнэ дулаан дуу хөгжмөөр дагалддаг.</li>
+                    <li class="about"><b>Онцгой дүрүүд:</b>
+                        MiSide-ийн ертөнцөд тоглогч тоглоомын өгүүлэмжийн хэсэгт янз бүрийн дүрүүдтэй таарч, тэдгээр нь
+                        янз бүрийн хэмжээгээр үүрэг гүйцэтгэдэг. Баатарлаг хүнд туслах, түүнийг айлгах эсвэл зүгээр л
+                        түүнтэй тоглох.</li>
+                </ul>
+                <p class="about">※Энэ тоглоомд хүчтэй дүр зураг агуулагдсан болно. Сул зүрхтэй хүмүүст зөвлөхгүй.</p>
+                </div>
+                <footer>
+                <div class="footer-content">
+                    <p>This is a fan-made website. MiSide is developed by AIHASTO and published by IndieArk. We are not affiliated with AIHASTO or IndieArk.</p>
+                    <ul class="socials">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                    <div class="mySlides">
+                        <img src="images/intro1.png" style="width:100%" class="photofix">
+                    </div>
+                    <div class="mySlides">
+                        <img src="images/intro2.png" style="width:100%" class="photofix">
+                    </div>
+                    <div class="mySlides">
+                        <img src="images/intro3.png" style="width:100%" class="photofix">
+                    </div>
+                    <div class="mySlides">
+                        <img src="images/intro4.png" style="width:100%" class="photofix">
+                    </div>
+                    <div class="mySlides">
+                        <img src="images/intro5.png" style="width:100%" class="photofix">
+                    </div>
+                    <div class="mySlides">
+                        <img src="images/intro6.png" style="width:100%" class="photofix">
+                    </div>
+                    <div class="mySlides">
+                        <img src="images/intro7.png" style="width:100%" class="photofix">
+                    </div>
+                    <div class="mySlides">
+                        <img src="images/intro8.png" style="width:100%" class="photofix">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </main>
+</body>
+
+</html>
